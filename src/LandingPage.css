@@ -1,0 +1,125 @@
+.headingBar {
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movingNote {
+    color: black;
+    white-space: nowrap;
+    position: absolute;
+    animation: moveNote 18s linear infinite;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+  
+  @keyframes moveNote {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+
+.headLine {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+.headLine h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.headLine p{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 1.4rem;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.uploadButton {
+    margin-top: 2rem;
+}
+
+.resizedheading {
+    text-align: center;
+    
+}
+.platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+.platformslogo {
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 1rem;
+}
+.platformslogo img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+}
+.downloadbutton  button{
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 0.8;
+}
+.downloadbutton  button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 1;
+}
+.footer {
+    background-color: rgba(0, 0, 0, 0.189);
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    font-weight: 400;
+}
+.footer p:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+.terms {
+    display: flex;
+    margin-left: 55%;
+}
+@media (max-width: 1300px) {
+    .terms {
+        margin-left: 35%;
+    }
+}
+@media (max-width: 1200px) {
+    .terms {
+        margin-left: 20%;
+    }
+}
+@media (max-width: 900px) {
+    .terms {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 400px) {
+    .footer {
+        height: 5rem;
+    }
+}
+.cropbutton {
+    margin-right: 1rem;
+}
